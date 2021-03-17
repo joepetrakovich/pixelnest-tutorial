@@ -44,4 +44,17 @@ public class PlayerScript : MonoBehaviour
         rigidBodyComponent.velocity = movement;
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        var enemyScript = collision.gameObject.GetComponent<EnemyScript>();
+        if (enemyScript != null)
+        {
+            var enemyHealth = enemyScript.GetComponent<HealthScript>();
+            enemyHealth.Damage(enemyHealth.hp);
+        }
+
+        var playerHealth = GetComponent<HealthScript>();
+        playerHealth.Damage(1);
+    }
+
 }

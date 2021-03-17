@@ -788,6 +788,20 @@ MonoBehaviour:
   shotPrefab: {fileID: 6856084113683542795, guid: 895258c7fb463eb429f518162051db7e,
     type: 3}
   shootingRate: 0.25
+--- !u!114 &1988341009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988341005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a53bf06cd1e02348b763951fe2eeda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
+  isEnemy: 0
 --- !u!114 &1988341010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,11 +1079,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1479735303}
     m_Modifications:
-    - target: {fileID: 1949082974366258989, guid: f3eab2e24f68aaf4d92ccfa672ff3324,
-        type: 3}
-      propertyPath: hp
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6670069801144688088, guid: f3eab2e24f68aaf4d92ccfa672ff3324,
         type: 3}
       propertyPath: m_RootOrder
