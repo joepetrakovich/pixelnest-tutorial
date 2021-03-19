@@ -24,8 +24,8 @@ public class EnemyVerticalMoveScript : MonoBehaviour
         //reverse movement speed when you hit screen edges
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
 
-        if (pos.y < 0.0 && speed.y < 0) ReverseDirection();
-        if (pos.y > 1.0 && speed.y > 0) ReverseDirection(); 
+        //if (pos.y < 0.0 && speed.y < 0) ReverseDirection();
+        //if (pos.y > 1.0 && speed.y > 0) ReverseDirection(); 
 
         movement = new Vector2(
             speed.x * direction.x,
