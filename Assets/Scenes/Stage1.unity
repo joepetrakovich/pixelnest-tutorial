@@ -751,6 +751,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1152587070}
+  - component: {fileID: 1152587071}
+  - component: {fileID: 1152587072}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -772,6 +774,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1152587071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152587069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51f1fa36014b3546b837009fe97524e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeEffect: {fileID: 6345506086064062569, guid: 7c979058dcd749a4ba3b706af102d751,
+    type: 3}
+  fireEffect: {fileID: 4880354968516189969, guid: 5f6efa4baafcb864d859b2aeb2cfd469,
+    type: 3}
+--- !u!114 &1152587072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152587069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84759396ea4c9f54c8e5e2cc35357674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSound: {fileID: 8300000, guid: e931d4ad328fed647a1b58351c9981e0, type: 3}
+  playerShotSound: {fileID: 8300000, guid: f77479cc36a84bf479094378b14d85bd, type: 3}
+  enemyShotSound: {fileID: 8300000, guid: dfdd5b54c4f8313419f96b3f6efa6579, type: 3}
 --- !u!1 &1163598458
 GameObject:
   m_ObjectHideFlags: 0

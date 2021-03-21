@@ -50,24 +50,22 @@ public class ScrollingScript : MonoBehaviour
         {
             var firstChild = backgroundPart.FirstOrDefault();
 
-            if (firstChild != null)
-            {
-                if (firstChild.transform.position.x < Camera.main.transform.position.x
+            if (firstChild != null
+                    && firstChild.transform.position.x < Camera.main.transform.position.x
                     && !firstChild.IsVisibleFrom(Camera.main))
-                {
-                    var lastChild = backgroundPart.LastOrDefault();
+            {
+                var lastChild = backgroundPart.LastOrDefault();
 
-                    var lastPosition = lastChild.transform.position;
-                    var lastSize = lastChild.bounds.max - lastChild.bounds.min;
+                var lastPosition = lastChild.transform.position;
+                var lastSize = lastChild.bounds.max - lastChild.bounds.min;
 
-                    firstChild.transform.position = new Vector3(
-                        lastPosition.x + lastSize.x,
-                        firstChild.transform.position.y,
-                        firstChild.transform.position.z);
+                firstChild.transform.position = new Vector3(
+                    lastPosition.x + lastSize.x,
+                    firstChild.transform.position.y,
+                    firstChild.transform.position.z);
 
-                    backgroundPart.Remove(firstChild);
-                    backgroundPart.Add(firstChild);
-                }
+                backgroundPart.Remove(firstChild);
+                backgroundPart.Add(firstChild);
             }
         }
     }

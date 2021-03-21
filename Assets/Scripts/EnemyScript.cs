@@ -42,6 +42,7 @@ public class EnemyScript : MonoBehaviour
             foreach (var weapon in weapons)
             {
                 weapon.Attack(true);
+                //SoundEffectsHelper.Instance.MakeEnemyShotSound();
             }
 
             if (!rendererComponent.IsVisibleFrom(Camera.main))
